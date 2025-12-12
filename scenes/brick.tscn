@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://be6m7brci0ic2"]
+
+[ext_resource type="Texture2D" uid="uid://bd4kcelv5sh4x" path="res://asset/bricks/01-Breakout-Tiles.png" id="1_5l4w1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0w5h4"]
+size = Vector2(92, 25)
+
+[node name="Brick" type="StaticBody2D"]
+collision_layer = 8
+collision_mask = 0
+
+[node name="BrickSprite" type="Sprite2D" parent="."]
+position = Vector2(0.2500038, -1.0000006)
+scale = Vector2(0.24088544, 0.203125)
+texture = ExtResource("1_5l4w1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5000076, -0.5)
+shape = SubResource("RectangleShape2D_0w5h4")

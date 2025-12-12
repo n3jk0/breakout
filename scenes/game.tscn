@@ -1,3 +1,365 @@
-[gd_scene format=3 uid="uid://disc1xer5wdd3"]
+[gd_scene load_steps=7 format=3 uid="uid://disc1xer5wdd3"]
+
+[ext_resource type="Script" uid="uid://dllgh8q8pojmn" path="res://scenes/game.gd" id="1_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://b4yqt20fg36v4" path="res://scenes/paddle.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://bwthlo64pi2gx" path="res://scenes/ball.tscn" id="2_yqjtg"]
+[ext_resource type="PackedScene" uid="uid://be6m7brci0ic2" path="res://scenes/brick.tscn" id="3_lnu2h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yqjtg"]
+size = Vector2(1965, 26)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lnu2h"]
+size = Vector2(29, 1195)
 
 [node name="Game" type="Node2D"]
+script = ExtResource("1_lbhrr")
+
+[node name="Lives" type="Node2D" parent="."]
+position = Vector2(-18, 1030)
+
+[node name="Paddle" parent="." groups=["Paddles"] instance=ExtResource("1_uwrxv")]
+position = Vector2(978, 1063)
+collision_layer = 2
+collision_mask = 5
+
+[node name="Ball" parent="." instance=ExtResource("2_yqjtg")]
+position = Vector2(981, 1031)
+collision_layer = 4
+collision_mask = 11
+
+[node name="Blocks" type="Node2D" parent="."]
+
+[node name="Brick" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(217, 40)
+
+[node name="Brick2" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(315, 40)
+
+[node name="Brick3" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(411, 40)
+
+[node name="Brick4" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(507, 40)
+
+[node name="Brick5" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(603, 40)
+
+[node name="Brick6" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(701, 40)
+
+[node name="Brick7" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(798, 40)
+
+[node name="Brick8" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(896, 40)
+
+[node name="Brick9" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(994, 40)
+
+[node name="Brick10" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1090, 40)
+
+[node name="Brick11" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1186, 40)
+
+[node name="Brick12" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1282, 40)
+
+[node name="Brick13" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1380, 40)
+
+[node name="Brick14" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1477, 40)
+
+[node name="Brick15" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1573, 40)
+
+[node name="Brick16" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1670, 40)
+
+[node name="Brick17" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(217, 71)
+
+[node name="Brick18" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(315, 71)
+
+[node name="Brick19" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(411, 71)
+
+[node name="Brick20" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(507, 71)
+
+[node name="Brick21" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(603, 71)
+
+[node name="Brick22" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(701, 71)
+
+[node name="Brick23" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(798, 71)
+
+[node name="Brick24" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(896, 71)
+
+[node name="Brick25" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(994, 71)
+
+[node name="Brick26" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1090, 71)
+
+[node name="Brick27" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1186, 71)
+
+[node name="Brick28" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1282, 71)
+
+[node name="Brick29" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1380, 71)
+
+[node name="Brick30" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1477, 71)
+
+[node name="Brick31" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1573, 71)
+
+[node name="Brick32" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1670, 71)
+
+[node name="Brick33" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(217, 102)
+
+[node name="Brick34" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(315, 102)
+
+[node name="Brick35" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(411, 102)
+
+[node name="Brick36" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(507, 102)
+
+[node name="Brick37" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(603, 102)
+
+[node name="Brick38" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(701, 102)
+
+[node name="Brick39" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(798, 102)
+
+[node name="Brick40" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(896, 102)
+
+[node name="Brick41" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(994, 102)
+
+[node name="Brick42" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1090, 102)
+
+[node name="Brick43" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1186, 102)
+
+[node name="Brick44" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1282, 102)
+
+[node name="Brick45" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1380, 102)
+
+[node name="Brick46" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1477, 102)
+
+[node name="Brick47" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1573, 102)
+
+[node name="Brick48" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1670, 102)
+
+[node name="Brick49" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(217, 135)
+
+[node name="Brick50" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(315, 135)
+
+[node name="Brick51" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(411, 135)
+
+[node name="Brick52" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(507, 135)
+
+[node name="Brick53" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(603, 135)
+
+[node name="Brick54" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(701, 135)
+
+[node name="Brick55" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(798, 135)
+
+[node name="Brick56" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(896, 135)
+
+[node name="Brick57" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(994, 135)
+
+[node name="Brick58" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1090, 135)
+
+[node name="Brick59" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1186, 135)
+
+[node name="Brick60" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1282, 135)
+
+[node name="Brick61" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1380, 135)
+
+[node name="Brick62" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1477, 135)
+
+[node name="Brick63" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1574, 134)
+
+[node name="Brick64" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1671, 134)
+
+[node name="Brick65" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(217, 166)
+
+[node name="Brick66" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(315, 166)
+
+[node name="Brick67" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(411, 166)
+
+[node name="Brick68" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(507, 166)
+
+[node name="Brick69" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(603, 166)
+
+[node name="Brick70" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(701, 166)
+
+[node name="Brick71" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(798, 166)
+
+[node name="Brick72" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(896, 166)
+
+[node name="Brick73" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(994, 166)
+
+[node name="Brick74" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1090, 166)
+
+[node name="Brick75" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1186, 166)
+
+[node name="Brick76" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1282, 166)
+
+[node name="Brick77" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1380, 166)
+
+[node name="Brick78" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1477, 166)
+
+[node name="Brick79" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1574, 165)
+
+[node name="Brick80" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1671, 165)
+
+[node name="Brick81" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(217, 195)
+
+[node name="Brick82" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(315, 195)
+
+[node name="Brick83" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(411, 195)
+
+[node name="Brick84" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(507, 195)
+
+[node name="Brick85" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(603, 195)
+
+[node name="Brick86" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(701, 195)
+
+[node name="Brick87" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(798, 195)
+
+[node name="Brick88" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(896, 195)
+
+[node name="Brick89" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(994, 195)
+
+[node name="Brick90" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1090, 195)
+
+[node name="Brick91" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1186, 195)
+
+[node name="Brick92" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1282, 195)
+
+[node name="Brick93" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1380, 195)
+
+[node name="Brick94" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1477, 195)
+
+[node name="Brick95" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1574, 194)
+
+[node name="Brick96" parent="Blocks" instance=ExtResource("3_lnu2h")]
+position = Vector2(1671, 194)
+
+[node name="Walls" type="Node2D" parent="."]
+
+[node name="UpWall" type="StaticBody2D" parent="Walls"]
+position = Vector2(0, 1)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/UpWall"]
+position = Vector2(963, -17)
+shape = SubResource("RectangleShape2D_yqjtg")
+
+[node name="DownWall" type="StaticBody2D" parent="Walls" groups=["Down"]]
+collision_mask = 0
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls/DownWall"]
+position = Vector2(963, 1095)
+shape = SubResource("RectangleShape2D_yqjtg")
+
+[node name="RightWall" type="StaticBody2D" parent="Walls"]
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Walls/RightWall"]
+position = Vector2(-14, 549)
+shape = SubResource("RectangleShape2D_lnu2h")
+
+[node name="LeftWall" type="StaticBody2D" parent="Walls"]
+collision_mask = 0
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Walls/LeftWall"]
+position = Vector2(1936, 524)
+shape = SubResource("RectangleShape2D_lnu2h")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 1858.0
+offset_top = 6.0
+offset_right = 1919.0
+offset_bottom = 61.0
+theme_override_font_sizes/font_size = 40
+text = "0"
+
+[node name="ContinueLabel" type="Label" parent="."]
+offset_left = 821.0
+offset_top = 706.0
+offset_right = 1135.0
+offset_bottom = 741.0
+theme_override_font_sizes/font_size = 25
+text = "Press \"space\" to continue!"

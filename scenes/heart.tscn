@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6t5p6rthxxaj"]
+
+[ext_resource type="Texture2D" uid="uid://ca8nkxbcfl4c0" path="res://asset/bricks/heart-logo-png-transparent.png" id="1_v30as"]
+
+[node name="Heart" type="Node2D"]
+
+[node name="HeartLogoPngTransparent" type="Sprite2D" parent="."]
+position = Vector2(-1.0000019, 0)
+scale = Vector2(0.019761024, 0.01976103)
+texture = ExtResource("1_v30as")
